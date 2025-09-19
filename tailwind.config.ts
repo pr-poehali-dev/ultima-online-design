@@ -61,6 +61,18 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
+				},
+				medieval: {
+					brown: '#8B4513',
+					gold: '#DAA520',
+					silver: '#C0C0C0',
+					darkGray: '#4B0082',
+					beige: '#F5DEB3'
+				},
+				mystical: {
+					purple: '#6A4C93',
+					violet: '#9B59B6',
+					darkPurple: '#2C1810'
 				}
 			},
 			borderRadius: {
@@ -84,11 +96,29 @@ export default {
 					to: {
 						height: '0'
 					}
+				},
+				'glow': {
+					'0%, 100%': { 
+						boxShadow: '0 0 5px #9B59B6, 0 0 10px #9B59B6, 0 0 15px #9B59B6' 
+					},
+					'50%': { 
+						boxShadow: '0 0 10px #9B59B6, 0 0 20px #9B59B6, 0 0 30px #9B59B6' 
+					},
+				},
+				'float': {
+					'0%, 100%': { transform: 'translateY(0px)' },
+					'50%': { transform: 'translateY(-10px)' }
 				}
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
-				'accordion-up': 'accordion-up 0.2s ease-out'
+				'accordion-up': 'accordion-up 0.2s ease-out',
+				'glow': 'glow 2s ease-in-out infinite alternate',
+				'float': 'float 3s ease-in-out infinite'
+			},
+			fontFamily: {
+				'medieval': ['Cinzel', 'serif'],
+				'fantasy': ['MedievalSharp', 'serif'],
 			}
 		}
 	},
